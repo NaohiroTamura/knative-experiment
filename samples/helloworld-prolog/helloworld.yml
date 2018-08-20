@@ -1,0 +1,15 @@
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+  name: helloworld-prolog
+  namespace: default
+spec:
+  runLatest:
+    configuration:
+      revisionTemplate:
+        spec:
+          container:
+            image: docker.io/${DOCKER_HUB_ACCOUNT}/helloworld-prolog
+            env:
+            - name: TARGET
+              value: "SWI Prolog Sample v1"
