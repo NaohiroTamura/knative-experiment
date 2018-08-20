@@ -7,4 +7,4 @@
 ## Deploying an app
 
 * [Hello World + Outbound network access - Prolog sample](./samples/helloworld-prolog/README.md)
-
+* [FaaS Shell](https://github.com/NaohiroTamura/faasshell/tree/master/knative)
